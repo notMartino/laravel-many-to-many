@@ -27,10 +27,11 @@ header {
 }
 
 header h2 {
+  color: white;
+  text-shadow: 0 0 5px sienna, 0 0 5px sienna;
   font-size: 28px;
   font-weight: normal;
   margin-right: 30px;
-  text-shadow: 0 0 5px sienna, 0 0 5px sienna;
 }
 
 header h2 i {
@@ -40,5 +41,37 @@ header h2 i {
 header a {
   color: sienna;
   font-size: 28px;
+}
+
+main {
+  padding: 20px 10% 20px;
+  background-color: skyblue;
+}
+
+main ul .title {
+  color: white;
+  text-shadow: 0 0 5px coral, 0 0 5px coral;
+}
+
+main ul .title h2 {
+  font-weight: normal;
+  font-size: 26px;
+}
+
+main ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 1px solid black;
+  font-size: 20px;
+}
+
+main ul li a {
+  color: black;
+}
+
+main ul li a i {
+  vertical-align: middle;
 }
 

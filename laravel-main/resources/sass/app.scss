@@ -16,6 +16,10 @@ body{
 @mixin centering($padTop,$padBottom) {
     padding: $padTop 10% $padBottom;
 }
+@mixin textshadow ($color, $shadow){
+    color: $color;
+    text-shadow: 0 0 5px $shadow, 0 0 5px $shadow;
+}
 
 // Proprietà header
 header{
@@ -28,10 +32,10 @@ header{
     background-color: burlywood;
     color: white;
     h2{
+        @include textshadow(white, sienna);
         font-size: 28px;
         font-weight: normal;
         margin-right: 30px;
-        text-shadow: 0 0 5px sienna, 0 0 5px sienna;
         i{
             font-size: 0.7em;
         }
@@ -40,4 +44,34 @@ header{
         color:sienna;
         font-size: 28px;
     }
+}
+
+// Proprietà main
+main{
+    @include centering(20px, 20px);
+    ul{
+        .title{
+            @include textshadow(white, coral);
+            h2{
+                font-weight: normal;
+                font-size: 26px;
+            }
+        }
+        li{    
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 10px 20px;
+            border-bottom: 1px solid black;
+            font-size: 20px;
+            a{
+                color: black;
+                i{
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+    background-color:skyblue;
 }
