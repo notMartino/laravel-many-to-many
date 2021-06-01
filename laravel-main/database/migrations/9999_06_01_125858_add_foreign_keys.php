@@ -18,6 +18,16 @@ class AddForeignKeys extends Migration
                     -> references('id')
                     -> on('locations');
         });
+
+        Schema::table('employee_task', function (Blueprint $table) {
+            $table -> foreign('employee_id', 'employeetask')
+                    -> references('id')
+                    -> on('employees');
+
+            $table -> foreign('task_id', 'taskemployee')
+                -> references('id')
+                -> on('tasks');
+        });
     }
 
     /**
