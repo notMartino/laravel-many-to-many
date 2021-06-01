@@ -2,4 +2,4 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', 'EmployeeController@EmployeeView');
+Route::get('/', 'EmployeeController@EmployeeView') -> name('employeeLink');

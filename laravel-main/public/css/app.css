@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Odibee Sans", cursive;
+}
+
+header {
+  padding: 20px 10% 20px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 80px;
+  background-color: burlywood;
+  color: white;
+}
+
+header h2 {
+  font-size: 28px;
+  font-weight: normal;
+  margin-right: 30px;
+  text-shadow: 0 0 5px sienna, 0 0 5px sienna;
+}
+
+header h2 i {
+  font-size: 0.7em;
+}
+
+header a {
+  color: sienna;
+  font-size: 28px;
+}
+

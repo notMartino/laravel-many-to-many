@@ -1,1 +1,43 @@
-//
+// Proprietà generali
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: 'Odibee Sans', cursive;
+}
+@mixin centering($padTop,$padBottom) {
+    padding: $padTop 10% $padBottom;
+}
+
+// Proprietà header
+header{
+    @include centering(20px, 20px);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    height: 80px;
+    background-color: burlywood;
+    color: white;
+    h2{
+        font-size: 28px;
+        font-weight: normal;
+        margin-right: 30px;
+        text-shadow: 0 0 5px sienna, 0 0 5px sienna;
+        i{
+            font-size: 0.7em;
+        }
+    }
+    a{
+        color:sienna;
+        font-size: 28px;
+    }
+}
